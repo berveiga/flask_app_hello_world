@@ -1,8 +1,12 @@
-
+import os
+import psycopg2
 from flask import Flask, render_template, request
 from dotenv import load_dotenv
 #from extensions import db
 from config import Config
+
+
+load_dotenv()
 
 app = Flask(__name__)
 headline = "test"

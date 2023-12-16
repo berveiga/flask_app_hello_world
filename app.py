@@ -9,6 +9,8 @@ from config import Config
 load_dotenv()
 
 app = Flask(__name__)
+url = os.environ.get("DATABASE_URL")  # gets variables from environment
+
 headline = "test"
 
 @app.route("/")

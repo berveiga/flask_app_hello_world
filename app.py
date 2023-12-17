@@ -13,8 +13,7 @@ app = Flask(__name__)
 url = os.environ.get("DATABASE_URL")  # gets variables from environment
 connection = psycopg2.connect(url)
 
-# Beginning of SQL code
-
+# Beginning of SQL codeeSQL 
 CREATE_ROOMS_TABLE = (
     "CREATE TABLE IF NOT EXISTS rooms (id SERIAL PRIMARY KEY, name TEXT);"
 )
@@ -126,8 +125,8 @@ def get_global_avg():
             days = cursor.fetchone()[0]
     return {"average": round(average, 2), "days": days}
 
-:while
-# E
+# End of SQL code
+
 headline = "test"
 
 @app.route("/")

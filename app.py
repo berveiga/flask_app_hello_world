@@ -10,6 +10,7 @@ load_dotenv()
 
 app = Flask(__name__)
 url = os.environ.get("DATABASE_URL")  # gets variables from environment
+connection = psycopg2.connect(url)
 
 headline = "test"
 

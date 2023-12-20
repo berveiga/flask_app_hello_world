@@ -36,7 +36,6 @@ nvidia-nvtx-cu12==12.1.105
 packaging==23.2
 pandas==2.1.4
 passlib==1.7.4
-psycopg2 @ file:///croot/psycopg2_1687443444440/work
 psycopg2-binary==2.9.9
 PyJWT==2.8.0
 python-dateutil==2.8.2
